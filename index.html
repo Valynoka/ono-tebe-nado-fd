@@ -10,34 +10,48 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a>
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link">
               главная
             </a>
           </li>
-          <li>
-            <a>
+          <li class="header__menu-item">
+            <a class="header__menu-link">
               посмотреть лоты
             </a>
           </li>
-          <li>
-            <a>
+          <li class="header__menu-item">
+            <a class="header__menu-link">
               об аукционе
             </a>
           </li>
-          <!-- Тут должен быть свг файл с лого -->
-          <a class="header__logo" href="#0" alt="Логотип сайта">
-            <svg>
-              <use fill="white" xlink:href="./images/sprite.svg#hlogo"></use>
-            </svg>
-          </a>
         </ul>
       </nav>
+      <!-- Тут должен быть свг файл с лого -->
+      <a class="header__logo" href="#0" alt="Логотип сайта">
+        <svg>
+          <use fill="white" xlink:href="./images/sprite.svg#hlogo"></use>
+        </svg>
+      </a>
+      <adress class="header__adress">
+        <a class="header__adress-tell" href="+9 999 555 5555" alt="Номер телефона">+9 999 555 5555</a>
+        <a class="header__adress-email" href="info@sobaka.ge" alt="Адрес электронной почты">info@sobaka.ge</a>
+        <p class="header__adress-adress">наб. Принсенграхт 263- <br> 265, Амстердам</p>
+      </adress>
     </header>
     <main>
+      <section class="main__baner">
+          <!-- надо продумать нейминг -->
+        <span class="main__baner-word-fist">оно</span>
+        <span class="main__baner-word-second">тебе</span>
+        <span class="main__baner-word-third">надо</span>
+        <p class="main__baner-phrase">аукцион вещей, в которые никто не врил
+          <a class="main__baner-button" href="#0">сделать ставку</a>
+        </p>
+      </section>
       <h2>Лоты</h2>
       <!-- Будет переиспользоваться 3 раза -->
       <article>
