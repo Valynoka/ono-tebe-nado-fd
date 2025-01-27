@@ -1,0 +1,33 @@
+/* Стили для header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 293px;
+    padding: 50px;
+}
+
+.header__menu-list{
+    display: flex;
+    gap: 20px;
+}
+
+.header__adress{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для основного раздела "ОНО ТЕБЕ НАДО" */
+.main__baner{
+    background-image: url(../../images/cover.jpg);
+    background-size: cover;
+}
+
+.main__baner-phrase{
+    grid-column: 1/span 3;
+}
+
+/* Карточки лотов */
+.main__items{
+    display: flex;
+}
