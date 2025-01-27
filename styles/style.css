@@ -19,66 +19,50 @@
 
 /* Стили для основного раздела "ОНО ТЕБЕ НАДО" */
 .main__baner{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     background-image: url(../../images/cover.jpg);
     background-size: cover;
-    box-shadow: 100px;
     padding: 50px;
     color: white;
 }
 
 .main__baner-list{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .main__baner-item:nth-child(1){
-    grid-column-start: 1/1span;
+    grid-column: 1/1span;
+    letter-spacing: 20px;
 }
 
 .main__baner-item:nth-child(2){
-    grid-column-start: 2/1span;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    letter-spacing: 20px;
+    line-height: 115%;
 }
 
 .main__baner-item:nth-child(3){
-    grid-column-start: 3/1span;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    letter-spacing: 20px;
+}
+
+.main__baner-item:nth-child(4){
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    grid-column: 1/-1;
+    grid-row: 4/-1;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .main__baner-phrase{
+    font-size: 22px;
     grid-column: 1/span 3;
-}
-
-/* Карточки лотов */
-.main__lots{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px, 1fr;
-    gap: 20px;
-}
-
-.maim__lots-title{
-    grid-template-rows: 1/-1;   
-}
-
-.main__lot:nth-child(2){
-    min-height: 597px;
-    background-image: url(../images/card-lot-01.jpg);
-    background-position: center;
-    background-size: 165%;
-
-}
-
-.main__lot:nth-child(3){
-    background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
-    background-size: 165%;
-}
-
-.main__lot:nth-child(4){
-    background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
-    background-size: 165%;
 }
 
 /* Надо подорать рамер шрифтов в % или чем - то еще. */
@@ -87,6 +71,30 @@
     font-size: 100px; 
 }
 
-.main__baner-phrase{
-    font-size: 22px;
+
+/* Карточки лотов */
+.main__lots-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.main__lot-item:nth-child(1){
+    min-height: 597px;
+    background-image: url(../images/card-lot-01.jpg);
+    background-position: center;
+    background-size: 165%;
+
+}
+
+.main__lot-item:nth-child(2){
+    background-image: url(../images/card-lot-02.jpg);
+    background-position: center;
+    background-size: 165%;
+}
+
+.main__lot-item:nth-child(3){
+    background-image: url(../images/card-lot-03.jpg);
+    background-position: center;
+    background-size: 165%;
 }
