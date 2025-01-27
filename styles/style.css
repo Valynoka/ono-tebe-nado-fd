@@ -19,6 +19,9 @@
 
 /* Стили для основного раздела "ОНО ТЕБЕ НАДО" */
 .main__baner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     background-image: url(../../images/cover.jpg);
     background-size: cover;
     box-shadow: 100px;
@@ -26,13 +29,56 @@
     color: white;
 }
 
+.main__baner-list{
+    display: grid;
+}
+
+.main__baner-item:nth-child(1){
+    grid-column-start: 1/1span;
+}
+
+.main__baner-item:nth-child(2){
+    grid-column-start: 2/1span;
+}
+
+.main__baner-item:nth-child(3){
+    grid-column-start: 3/1span;
+}
+
 .main__baner-phrase{
     grid-column: 1/span 3;
 }
 
 /* Карточки лотов */
-.main__items{
-    display: flex;
+.main__lots{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px, 1fr;
+    gap: 20px;
+}
+
+.maim__lots-title{
+    grid-template-rows: 1/-1;   
+}
+
+.main__lot:nth-child(2){
+    min-height: 597px;
+    background-image: url(../images/card-lot-01.jpg);
+    background-position: center;
+    background-size: 165%;
+
+}
+
+.main__lot:nth-child(3){
+    background-image: url(../images/card-lot-02.jpg);
+    background-position: center;
+    background-size: 165%;
+}
+
+.main__lot:nth-child(4){
+    background-image: url(../images/card-lot-03.jpg);
+    background-position: center;
+    background-size: 165%;
 }
 
 /* Надо подорать рамер шрифтов в % или чем - то еще. */

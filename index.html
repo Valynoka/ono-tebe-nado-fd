@@ -14,101 +14,112 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
-            <a class="header__menu-link">
+            <a class="header__menu-link" href="#0" alt="Перход на главную страницу">
               главная
             </a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link">
+            <a class="header__menu-link" href="#0" alt="Перход на описание лотов">
               посмотреть лоты
             </a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link">
+            <a class="header__menu-link" href="#0" alt="Перход на описание аукциона">
               об аукционе
             </a>
           </li>
         </ul>
       </nav>
-      <!-- Тут должен быть свг файл с лого -->
-      <a class="header__logo" href="#0" alt="Логотип сайта">
+      <!-- Подобная форма вненсения svg картинок сопровождалась ошибкой, 
+      в рамкох которой сообщалось, что лого не находится в теге ссылки, 
+      хотя фактически это было так. Аналогично хотел сделать в footer, но не прошел тесты -->
+      <!-- <a class="header__logo" href="#0" alt="Логотип сайта">
         <svg>
           <use fill="white" xlink:href="./images/sprite.svg#hlogo"></use>
         </svg>
+      </a> -->
+      <a class="header__logo-link">
+        <img class="header__logo-icon" src="./images/logo-black.svg" alt="Логотип сайта на белом фоне"/>
       </a>
       <adress class="header__adress">
         <a class="header__adress-tell" href="+9 999 555 5555" alt="Номер телефона">+9 999 555 5555</a>
         <a class="header__adress-email" href="info@sobaka.ge" alt="Адрес электронной почты">info@sobaka.ge</a>
-        <p class="header__adress-adress">наб. Принсенграхт 263- <br> 265, Амстердам</p>
+        <a class="header__adress-adress" href="#0" alt="Адрес местонахождения">наб. Принсенграхт 263- <br> 265, Амстердам</a>
       </adress>
     </header>
     <main>
       <section class="main__baner">
-          <!-- надо продумать нейминг
-          решил, что списком будет логичнее сделать слова, до этого был span-->
-          <ul class="main__baner-list">
-            <li class="main__baner-item">
-              <p class="main__baner-word">оно</p>
-            </li>
-            <li class="main__baner-item">
-              <p class="main__baner-word">тебе</p>
-            </li>
-            <li class="main__baner-item">
-              <p class="main__baner-word">надо</p>
-            </li>
-          </ul>
-        <p class="main__baner-phrase">аукцион вещей, в которые никто не врил
-          <a class="main__baner-button" href="#0">сделать ставку</a>
-        </p>
+        <!-- надо продумать нейминг
+        решил, что списком будет логичнее сделать слова, до этого был span-->
+        <ul class="main__baner-list">
+          <li class="main__baner-item">
+            <p class="main__baner-word">оно</p>
+          </li>
+          <li class="main__baner-item">
+            <p class="main__baner-word">тебе</p>
+          </li>
+          <li class="main__baner-item">
+            <p class="main__baner-word">надо</p>
+          </li>
+          <li class="main__baner-item">
+            <p class="main__baner-text">аукцион вещей, в которые никто не врил</p>
+            <a class="main__baner-button" href="#0">сделать ставку</a>
+          </li>
+        </ul>
       </section>
-      <h2 class="main__title">Лоты</h2>
-      <!-- Будет переиспользоваться 3 раза -->
-      <section class="main__items">
-        <article class="main__item">
-          <h4 class="main__item-title">Фильм режиссёра, который бросил киношколу</h4>
-          <p class="main__item-text">Не просто бросил, а ушёл с первой лекции. 
-            Какой была бы ваша ставка, если бы вы не знали, 
-            что режиссёр — Пол Томас Андерсон?
-          </p>
-        </article>
-        <article class="main__item">
-          <h4 class="main__item-title">ФКнига, где описан один скучный день из жизни рекламного 
-            агента</h4>
-          <p class="main__item-text">Объёмом почти в тысячу страниц. 
-            Иногда без знаков препинания и с переходами на древнеанглийский. 
-            В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, 
-            начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. 
-            Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-          </p>
-        </article>
-        <article class="main__item">
-          <h4 class="main__item-title">Картина, которую повторит даже 5-летний сын маминой подруги</h4>
-          <p class="main__item-text">Ну действительно, там линия, тут кружочек, 
-            а здесь и вовсе что-то похожее на инфузорию-туфельку. 
-            Никаких полей, лесов, котиков... 
-            Сколько бы вы на такое поставили, если бы не знали, 
-            что это — одна из революционных работ Кандинского?
-          </p>
-        </article>
+      <section class="main__lots">
+        <h2 class="main__lots-title">Лоты</h2>
+        <!-- Нейминг не очень хороший, надо подумать, как его поменять, 
+        чтобы бекграунд сделать нормально -->
+        <ul class="main__lot-list">
+          <li>
+            <h4 class="main__lot-title">Фильм режиссёра, который бросил киношколу</h4>
+            <p class="main__lot-text">Не просто бросил, а ушёл с первой лекции. 
+              Какой была бы ваша ставка, если бы вы не знали, 
+              что режиссёр — Пол Томас Андерсон?
+            </p>
+          </li>
+          <li>
+            <h4 class="main__lot-title">ФКнига, где описан один скучный день из жизни рекламного 
+              агента</h4>
+            <p class="main__lot-text">Объёмом почти в тысячу страниц. 
+              Иногда без знаков препинания и с переходами на древнеанглийский. 
+              В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, 
+              начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. 
+              Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+            </p>
+          </li>
+          <li>
+            <h4 class="main__lot-title">Картина, которую повторит даже 5-летний сын маминой подруги</h4>
+            <p class="main__lot-text">Ну действительно, там линия, тут кружочек, 
+              а здесь и вовсе что-то похожее на инфузорию-туфельку. 
+              Никаких полей, лесов, котиков... 
+              Сколько бы вы на такое поставили, если бы не знали, 
+              что это — одна из революционных работ Кандинского?
+            </p>
+          </li>
+        </ul>
+        <a class="main__button-info">Посмотреть больше</a>
       </section>
-      <a>Посмотреть больше</a>
-      <section>
-        <a class="section__logo" href="#0" alt="Логотип сайта">
-          <svg>
-            <use xlink:href="./images/sprite.svg#mlogo"></use>
-          </svg>
+      <section class="main__description">
+        <!-- Тоже пришлось мрименять img -->
+        <a class="main__description-link" href="#0" alt="Сылка на главную страницу">
+          <img class="main__description-icon"
+          src="./images/logo-white.svg"
+          alt="Логотип сайта на черном фоне"
+          />
         </a>
-        <h3>
+        <h3 class="main__description-title">
           Об аукционе
         </h3>
-        <p>
+        <p class="main__description-text">
           Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
           Наши лоты вообще не должны были попасть ни на один аукцион. 
           Потому что кому нужен дневник девочки-подростка или картина, 
           которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, 
           созданные любителями?
         </p>
-        <p>
+        <p class="main__description-text">
           Слишком сложные или, наоборот, слишком простые. Опережающие своё время. 
           В пух и прах растерзанные критиками. Непринятые и непонятые. 
           Когда-то они казались просто неудачными. Но, несмотря
@@ -119,50 +130,26 @@
         </p>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <!-- Надо найти тег, который применяется к телефонным номерам и email-->
-      <adress>
-        <a href="+9 999 555 5555" alt="Номер телефона">+9 999 555 5555</a>
-        <a href="info@sobaka.ge" alt="Адрес электронной почты">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265,<br> Амстердам</p>
+      <adress class="">
+        <a class="footer__tell" href="+9 999 555 5555" alt="Номер телефона">+9 999 555 5555</a>
+        <a class="footer__email" href="info@sobaka.ge" alt="Адрес электронной почты">info@sobaka.ge</a>
+        <a class="footer__adress" href="#0" alt="Адрес местонахождения">наб. Принсенграхт 263-265,<br> Амстердам</a>
       </adress>
-      <menu>
-        <ul>
-          <li>
-            <a>главная</a>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#0" alt="Перход на главную страницу">главная</a>
           </li>
-          <li>
-            <a>посмотреть лоты</a>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#0" alt="Перход на описание лотов">посмотреть лоты</a>
           </li>
-          <li>
-            <a>об аукционе</a>
-          </li>
-        </ul>
-        <!-- Надо сделать обертку, и добавать свг файлы -->
-        <ul>
-          <li>
-            <a>
-              <svg>
-                <use xlink:href="./images/sprite.svg#yt"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a>
-              <svg>
-                <use xlink:href="./images/sprite.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a>
-              <svg>
-                <use xlink:href="./images/sprite.svg#pinterest"></use>
-              </svg>
-            </a>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#0" alt="Перход на описание аукциона">об аукционе</a>
           </li>
         </ul>
-      </menu>
+      </nav>
     </footer>
   </body>
 </html>
