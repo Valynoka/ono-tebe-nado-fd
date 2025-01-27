@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=width-device initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../ono-tebe-nado/fonts/fonts.css"/>
     <link rel="stylesheet" href="./styles/global.css"/>
-    <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
@@ -44,10 +44,19 @@
     </header>
     <main>
       <section class="main__baner">
-          <!-- надо продумать нейминг -->
-        <span class="main__baner-fist">оно</span>
-        <span class="main__baner-second">тебе</span>
-        <span class="main__baner-third">надо</span>
+          <!-- надо продумать нейминг
+          решил, что списком будет логичнее сделать слова, до этого был span-->
+          <ul class="main__baner-list">
+            <li class="main__baner-item">
+              <p class="main__baner-word">оно</p>
+            </li>
+            <li class="main__baner-item">
+              <p class="main__baner-word">тебе</p>
+            </li>
+            <li class="main__baner-item">
+              <p class="main__baner-word">надо</p>
+            </li>
+          </ul>
         <p class="main__baner-phrase">аукцион вещей, в которые никто не врил
           <a class="main__baner-button" href="#0">сделать ставку</a>
         </p>

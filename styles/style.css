@@ -21,6 +21,9 @@
 .main__baner{
     background-image: url(../../images/cover.jpg);
     background-size: cover;
+    box-shadow: 100px;
+    padding: 50px;
+    color: white;
 }
 
 .main__baner-phrase{
@@ -30,4 +33,14 @@
 /* Карточки лотов */
 .main__items{
     display: flex;
+}
+
+/* Надо подорать рамер шрифтов в % или чем - то еще. */
+.main__baner-word{
+    font-weight: bold;
+    font-size: 100px; 
+}
+
+.main__baner-phrase{
+    font-size: 22px;
 }
