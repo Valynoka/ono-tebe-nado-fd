@@ -5,73 +5,126 @@
     align-items: center;
     height: 293px;
     padding: 50px;
+    font-size: 18px;
 }
 
 .header__menu-list {
+    position: relative;
+    bottom: 4px;
+    right: 10px;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 26px;
+}
+
+.header__menu-item {
+    list-style-type: circle;
+    gap: 10px;
+    padding-left: 8px;
+}
+
+.header__menu-item:nth-child(1) {
+    list-style-type: none;
+}
+
+/* .header__menu-item:active {
+    list-style-type: none;
+} */
+
+.header__menu-link {
+    gap: 10px;
+}
+
+.header__menu-link:active {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header__logo-icon {
+    position: relative;
+    right: 98px;
+    width: 148px;
+    height: 105px;
 }
 
 .header__adress {
+    position: relative;
+    right: 44px;
     display: flex;
     flex-direction: column;
 }
 
-/* Стили для основного раздела "ОНО ТЕБЕ НАДО" */
+.header__adress-map {
+    line-height: 27px;
+}
+
+/* СТИЛИ К БАНЕРУ "ОНО ТЕБЕ НАДО" */
 .main__baner {
-    background-image: url(../../images/cover.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
     background-size: cover;
-    padding: 50px;
+    min-height: 757px;
     color: white;
+    padding: 50px;
+    text-transform: uppercase;
 }
 
 .main__baner-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .main__baner-item:nth-child(1) {
-    grid-column: 1/1span;
-    letter-spacing: 20px;
+    padding-bottom: 22px;
 }
 
 .main__baner-item:nth-child(2) {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    letter-spacing: 20px;
-    line-height: 115%;
-}
-
-.main__baner-item:nth-child(3) {
-    grid-column: 3/4;
-    grid-row: 3/4;
-    letter-spacing: 20px;
-}
-
-.main__baner-item:nth-child(4) {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    grid-column: 1/-1;
-    grid-row: 4/-1;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    justify-content: center;
+    padding: 0 0 5px 32px;
+    padding-left: 32px;
 }
 
-.main__baner-phrase {
-    font-size: 22px;
-    grid-column: 1/span 3;
+/* Кроме как position нормальных способов не нашел для выравния по макету, 
+слово отодвигает за счет letter-spacing */
+.main__baner-item:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    position: relative;
+    top: 12px;
+    left: 22px;
 }
 
-/* Надо подорать рамер шрифтов в % или чем - то еще. */
 .main__baner-word {
+    font-size: 100px;
     font-weight: bold;
-    font-size: 100px; 
+    letter-spacing: 28px;
+    left: 40px;
 }
 
-/* Карточки лотов */
+.main__baner-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 100;
+    word-spacing: 19px;
+}
+
+.main__baner-button {
+    border: 1px solid white;
+    padding: 12px 32px;
+    text-decoration: none;
+    word-spacing: 0;
+}
+
+/* КАРТОЧКИ ЛОТОВ */
 .main__lots-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
