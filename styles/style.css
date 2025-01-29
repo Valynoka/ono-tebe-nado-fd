@@ -43,10 +43,6 @@
     list-style-type: none;
 } */
 
-.header__menu-link {
-    gap: 10px;
-}
-
 .header__menu-link:active {
     text-decoration: none;
     list-style-type: none;
