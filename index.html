@@ -41,16 +41,17 @@
       <a class="header__logo-link" href="#0">
         <img class="header__logo-icon" src="./images/logo-black.svg" alt="Логотип сайта на белом фоне"/>
       </a>
-      <article class="header__adress">
-        <a class="header__adress-tell" href="+9 999 555 5555" alt="Номер телефона">+9 999 555 5555</a>
-        <a class="header__adress-email" href="info@sobaka.ge" alt="Адрес электронной почты">info@sobaka.ge</a>
-        <a class="header__adress-map" href="#0" alt="Адрес местонахождения">наб. Принсенграхт 263- <br> 265, Амстердам</a>
-      </article>
+      <address class="header__adress address">
+        <a class="adress-phone" href="+9 999 555 5555" alt="Номер телефона">+9 999 555 5555</a>
+        <a class="adress-email" href="info@sobaka.ge" alt="Адрес электронной почты">info@sobaka.ge</a>
+        <a class="adress-location" href="#0" alt="Адрес местонахождения">наб. Принсенграхт 263- <br> 265, Амстердам</a>
+      </address>
     </header>
     <main>
       <section class="main__baner">
         <!-- надо продумать нейминг
-        решил, что списком будет логичнее сделать слова, до этого был span-->
+        решил, что списком будет логичнее сделать слова, до этого был span
+        использовал тег p так как в банере может появиться и текст-->
         <ul class="main__baner-list">
           <li class="main__baner-item">
             <p class="main__baner-word">оно</p>
@@ -70,8 +71,6 @@
       </section>
       <section class="main__lots">
         <h2 class="main__lots-title">Лоты</h2>
-        <!-- Нейминг не очень хороший, надо подумать, как его поменять, 
-        чтобы бекграунд сделать нормально -->
         <ul class="main__lots-list">
           <li class="main__lot-item">
             <h4 class="main__lot-title">Фильм режиссёра, который бросил киношколу</h4>
@@ -81,7 +80,7 @@
             </p>
           </li>
           <li class="main__lot-item">
-            <h4 class="main__lot-title">ФКнига, где описан один скучный день из жизни рекламного 
+            <h4 class="main__lot-title">Книга, где описан один скучный день из жизни рекламного 
               агента</h4>
             <p class="main__lot-text">Объёмом почти в тысячу страниц. 
               Иногда без знаков препинания и с переходами на древнеанглийский. 
@@ -96,11 +95,12 @@
               а здесь и вовсе что-то похожее на инфузорию-туфельку. 
               Никаких полей, лесов, котиков... 
               Сколько бы вы на такое поставили, если бы не знали, 
-              что это — одна из революционных работ Кандинского?
+              что это — одна из <br> революционных работ Кандинского?
             </p>
           </li>
         </ul>
-        <a class="main__button-info">Посмотреть больше</a>
+        <!-- Решил не использовать тег button, а представить все ссылкой -->
+        <a class="main__button-info" href="#0">посмотреть больше</a>
       </section>
       <section class="main__description">
         <!-- Тоже пришлось мрименять img -->
@@ -133,11 +133,11 @@
     </main>
     <footer class="footer">
       <!-- Надо найти тег, который применяется к телефонным номерам и email-->
-      <article class="footer__adress">
-        <a class="footer__tell" href="+9 999 555 5555" alt="Номер телефона">+9 999 555 5555</a>
-        <a class="footer__email" href="info@sobaka.ge" alt="Адрес электронной почты">info@sobaka.ge</a>
-        <a class="footer__adress" href="#0" alt="Адрес местонахождения">наб. Принсенграхт 263-265,<br> Амстердам</a>
-      </article>
+      <address class="footer__address address">
+        <a class="adress__tell" href="+9 999 555 5555" alt="Номер телефона">+9 999 555 5555</a>
+        <a class="adress__email" href="info@sobaka.ge" alt="Адрес электронной почты">info@sobaka.ge</a>
+        <a class="adress__location" href="#0" alt="Адрес местонахождения">наб. Принсенграхт 263-265,<br> Амстердам</a>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
@@ -151,6 +151,11 @@
           </li>
         </ul>
       </nav>
+      <address class="footer__social">
+        <img class="footer__social-icon" src="./images/yt.svg" alt="Иконка социфальной сети ютуб"/>
+        <img class="footer__social-icon" src="./images/vk.svg" alt="Иконка социфальной сети вконтакте"/>
+        <img class="footer__social-icon" src="./images/pinterest.svg" alt="Иконка социфальной сети пинтерест"/>
+      </address>
     </footer>
   </body>
 </html>
