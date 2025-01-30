@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-.adress-phone,.adress-email {
+.address__phone,.address__email {
     text-decoration: underline;
 }
 
