@@ -43,7 +43,7 @@
     border-bottom: 2px solid black;
 }
 
-.header__menu-item:active{
+.header__menu-item:active {
     border: none;
     list-style-type: none;
 }
