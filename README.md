@@ -1,1 +1,1 @@
-https://github.com/Valynoka/ono-tebe-nado
+https://github.com/Valynoka/ono-tebe-nado-fd
