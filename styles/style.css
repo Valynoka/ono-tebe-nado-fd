@@ -83,6 +83,7 @@
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 165px 50px 50px;
     margin-bottom: 180px;
 }
@@ -157,6 +158,7 @@
 .main__lots-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 25px;
     margin-bottom: 30px;
 }
